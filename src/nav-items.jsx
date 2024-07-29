@@ -1,5 +1,8 @@
-import { Home, User, Settings, HelpCircle } from "lucide-react";
+import { Home, User, Settings as SettingsIcon, HelpCircle } from "lucide-react";
 import Index from "./pages/Index.jsx";
+import Profile from "./pages/Profile.jsx";
+import Settings from "./pages/Settings.jsx";
+import Help from "./pages/Help.jsx";
 
 /**
  * Central place for defining the navigation items. Used for navigation components and routing.
@@ -15,18 +18,18 @@ export const navItems = [
     title: "Profile",
     to: "/profile",
     icon: <User className="h-4 w-4" />,
-    page: <Index />, // Placeholder, replace with actual Profile component when created
+    page: <Profile />,
   },
   {
     title: "Settings",
     to: "/settings",
-    icon: <Settings className="h-4 w-4" />,
-    page: <Index />, // Placeholder, replace with actual Settings component when created
+    icon: <SettingsIcon className="h-4 w-4" />,
+    page: <Settings />,
   },
   {
     title: "Help",
     to: "/help",
     icon: <HelpCircle className="h-4 w-4" />,
-    page: <Index />, // Placeholder, replace with actual Help component when created
+    page: <Help />,
   },
 ];
