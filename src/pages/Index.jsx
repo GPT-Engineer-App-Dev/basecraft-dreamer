@@ -1,15 +1,14 @@
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import Navbar from "@/components/Navbar";
 
 const Index = () => {
   const [inputValue, setInputValue] = useState('');
 
   return (
     <div className="min-h-screen flex flex-col">
-      <header className="bg-primary text-primary-foreground p-4">
-        <h1 className="text-2xl font-bold">My App</h1>
-      </header>
+      <Navbar />
 
       <main className="flex-grow container mx-auto px-4 py-8">
         <h2 className="text-xl font-semibold mb-4">Welcome to My App</h2>
